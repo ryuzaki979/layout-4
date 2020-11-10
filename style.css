@@ -1,0 +1,90 @@
+* {
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #010101;
+}
+
+.navbar {
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.navbar .icons {
+    flex-basis: 10%;
+}
+.icons i {
+    padding: 1rem;
+}
+.navbar .menu {
+    flex-basis: 40%;
+    display: flex;
+    justify-content:  space-around;
+}
+li{
+    list-style: none;
+}
+li.active {
+    color: rgba(236, 126, 126, 0.8);
+}
+.search-left {
+    border-bottom: 1px solid;
+}
+.search-left input {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.background-selection {
+position: absolute;
+height: 70vh;
+top: 50%;
+left:10%;
+transform: translate(-50%,-50%);
+z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.background-selection a{
+    text-decoration: none;
+    transition: .2s;
+   
+}
+.background-selection a:nth-child(1) {
+    color: rgba(236, 126, 126, 0.8);
+}
+.background-selection a:hover {
+    font-size: 1.3rem;
+}
+
+.content {
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    transform: translate(-60%,-75%);
+    text-align: center;
+    font-size: 2rem;
+}
+img {
+    width: 500px;
+    display: block;
+    position:  absolute;
+    top: 60%;
+    left: 75%;
+    transform: translate(-55%,-55%);
+    opacity: .2;
+    animation: animate 10s linear infinite;
+}
